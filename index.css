@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+.greenText {
+    color: #4ADF86;
+}
+
+.passwordField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #55F991;
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+}
+
+.container {
+    margin: 64px auto;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+    background-color: #1F2937;
+}
+
+
+.passwords {
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 446px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 10px;
+    padding-top: 115px;
+    padding-left: 52px;
+    font-size: 40px;
+    width: 354px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0 0 51px;
+    padding-left: 52px;
+    color: #D5D4D8;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: space-around;
+    color: #D5D4D8;
+}
+
+#pwLength {
+    background-color: #273549;
+    border: none;
+    border-radius: 6px;
+    width: 191px;
+    height: 42px;
+    margin-left: 50px;
+    color: white;
+    text-align: center;
+}
+
+button {
+    margin: 0 0 35px 52px;
+    width: 191px;
+    height: 42px;
+    color: white;
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+}
+
+hr {
+    border: 1px solid #273549;
+    width: 446px;
+}
