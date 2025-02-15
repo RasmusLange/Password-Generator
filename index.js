@@ -5,6 +5,22 @@ let firstPassword = document.querySelector("#firstPassword")
 let secondPassword = document.querySelector("#secondPassword")
 
 function copyToClipboard(input) {
+    let counter = 0;
+    let startColor = { r: 16, g: 185, b: 129 }
+    let endColor = { r: 39, g: 53, b: 73 }
+    let colorSteps = { r: (endColor.r - startColor.r)/10, g: (endColor.g - startColor.g)/10, b: (endColor.b - startColor.b)/10 }
+    console.log(colorSteps)
+    
+    let theInterval = setInterval(function a(){
+        startColor = { r: startColor.r - colorSteps.r, g: startColor.g + colorSteps.g, b: startColor.b + colorSteps.b }
+        if(counter === 10){
+            input.style.backgroundColor = `rgb(${endColor.r}, ${endColor.g}, ${endColor.b})`
+            clearInterval(theInterval)
+        } else{
+            input.style.backgroundColor = `rgb(${startColor.r}, ${startColor.g}, ${startColor.b})`
+            counter++
+        }
+    }, 50)
     navigator.clipboard.writeText(input.textContent)
     //console.log(input.textContent)
 }
