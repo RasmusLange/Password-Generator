@@ -5,8 +5,8 @@ let firstPassword = document.querySelector("#firstPassword")
 let secondPassword = document.querySelector("#secondPassword")
 
 function copyToClipboard(input) {
-    //navigator.clipboard.writeText(input.textContent)
-    console.log(input.textContent)
+    navigator.clipboard.writeText(input.textContent)
+    //console.log(input.textContent)
 }
 
 function generatePassword(input, length) {
